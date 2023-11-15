@@ -21,10 +21,14 @@
 .l-section-horizontal {
   width: 300%;
   overflow: visible;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  // flex-direction: row;
   padding: 3px;
 }
+
+// .slider-mask {
+//   overflow: hidden;
+// }
 
 .l-img {
   background-color: red;
