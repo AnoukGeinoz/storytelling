@@ -24,8 +24,16 @@ tl.to(".l-section-horizontal", {
     end: "+=300%",
     pin: true,
     scrub: true,
-    // markers: true,
-    repeat: 3,
+    markers: true,
+    onComplete: () => {
+      // blockScroll.classList.add("slider-mask-2-hidden");
+    },
+    onUpdate: function (self) {
+      document.querySelector(".progress-bar").style.transform =
+        "scaleX(" + self.progress + ")";
+      document.querySelector(".progress-image").style.left =
+        self.progress * 100 + "%";
+    },
   },
   x: amplitudeX + "%",
   ease: "sine.inOut",
@@ -74,3 +82,139 @@ var slider3Button = document.querySelector("#slider-3-button");
 slider3Button.addEventListener("click", function () {
   document.querySelector(".shop").classList.remove("hidden");
 });
+
+slider3Button.addEventListener("click", function () {
+  document.querySelector("footer").classList.remove("hidden");
+});
+
+// gsap.to(".l-img-1-1", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-1",
+//     start: "top 50%",
+//     markers: true,
+//   },
+//   x: "-30px",
+//   duration: 1,
+//   delay: 1,
+// });
+
+// gsap.from(".l-img-1-1", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-1",
+//     start: "top 50%",
+//     // markers: true,
+//   },
+//   opacity: 0,
+//   duration: 1,
+//   delay: 1,
+// });
+
+// gsap.to(".l-img-1-2", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-2",
+//     start: "top 50%",
+//     markers: true,
+//   },
+//   x: "-30px",
+//   duration: 1,
+//   delay: 2.5,
+// });
+
+// gsap.from(".l-img-1-2", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-2",
+//     start: "top 50%",
+//     // markers: true,
+//   },
+//   opacity: 0,
+//   duration: 1,
+//   delay: 2.5,
+// });
+
+// gsap.to(".l-img-1-3", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-3",
+//     start: "top 50%",
+//     markers: true,
+//   },
+//   x: "-30px",
+//   duration: 1,
+//   delay: 3.5,
+// });
+
+// gsap.from(".l-img-1-3", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-3",
+//     start: "top 50%",
+//     // markers: true,
+//   },
+//   opacity: 0,
+//   duration: 1,
+//   delay: 3.5,
+// });
+
+// gsap.to(".l-img-1-4", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-4",
+//     start: "top 50%",
+//     markers: true,
+//   },
+//   x: "-30px",
+//   duration: 1,
+//   delay: 4.5,
+// });
+
+// gsap.from(".l-img-1-4", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-4",
+//     start: "top 50%",
+//     // markers: true,
+//   },
+//   opacity: 0,
+//   duration: 1,
+//   delay: 4.5,
+// });
+
+// gsap.to(".l-img-1-5", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-5",
+//     start: "top 50%",
+//     markers: true,
+//   },
+//   x: "-30px",
+//   duration: 1,
+//   delay: 5.5,
+// });
+
+// gsap.from(".l-img-1-5", {
+//   scrollTrigger: {
+//     trigger: ".l-img-1-5",
+//     start: "top 50%",
+//     // markers: true,
+//   },
+//   opacity: 0,
+//   duration: 1,
+//   delay: 5.5,
+// });
+
+// gsap.to(".l-img-2-1", {
+//   scrollTrigger: {
+//     trigger: ".l-img-2-1",
+//     start: "top 90%",
+//     markers: true,
+//   },
+//   x: "-60px",
+//   duration: 1,
+//   delay: 12,
+// });
+
+// gsap.from(".l-img-2-1", {
+//   scrollTrigger: {
+//     trigger: ".l-img-2-1",
+//     start: "top 90%",
+//     // markers: true,
+//   },
+//   opacity: 0,
+//   duration: 1,
+//   delay: 12,
+// });
