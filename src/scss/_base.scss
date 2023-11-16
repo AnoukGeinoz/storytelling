@@ -5,6 +5,12 @@
 :root {
 }
 
+@font-face {
+  font-family: "Bloomer";
+  src: url("../fonts/BloomerDEMO-Regular.woff2") format("woff2"),
+    url("../fonts/BloomerDEMO-Regular.woff") format("woff");
+}
+
 /* ====================================
 // reset rules
 // ==================================== */
