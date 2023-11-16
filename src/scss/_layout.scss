@@ -18,7 +18,9 @@
   aspect-ratio: 1 / 1.5;
 }
 
-.l-section-horizontal {
+.l-section-horizontal,
+.l-section-horizontal-2,
+.l-section-horizontal-3 {
   width: 300%;
   overflow: visible;
   display: inline-flex;
@@ -26,9 +28,11 @@
   padding: 3px;
 }
 
-// .slider-mask {
-//   overflow: hidden;
-// }
+.slider-mask,
+.slider-mask-2,
+.slider-mask-3 {
+  overflow: hidden;
+}
 
 .l-img {
   background-color: red;
