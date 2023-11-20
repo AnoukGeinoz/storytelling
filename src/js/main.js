@@ -31,8 +31,8 @@ tl.to(".l-section-horizontal", {
     onUpdate: function (self) {
       document.querySelector(".progress-bar").style.transform =
         "scaleX(" + self.progress + ")";
-      document.querySelector(".progress-image").style.left =
-        self.progress * 100 + "%";
+      // document.querySelector(".progress-image").style.left =
+      //   self.progress * 100 + "%";
     },
   },
   x: amplitudeX + "%",
@@ -52,6 +52,15 @@ slider1Button.addEventListener("click", function () {
       scrub: true,
       // markers: true,
       repeat: 3,
+      onComplete: () => {
+        // blockScroll.classList.add("slider-mask-2-hidden");
+      },
+      onUpdate: function (self) {
+        document.querySelector(".progress-bar-2").style.transform =
+          "scaleX(" + self.progress + ")";
+        // document.querySelector(".progress-image").style.left =
+        //   self.progress * 100 + "%";
+      },
     },
     x: amplitudeX + "%",
     ease: "sine.inOut",
@@ -71,6 +80,15 @@ slider2Button.addEventListener("click", function () {
       scrub: true,
       // markers: true,
       repeat: 3,
+      onComplete: () => {
+        // blockScroll.classList.add("slider-mask-2-hidden");
+      },
+      onUpdate: function (self) {
+        document.querySelector(".progress-bar-3").style.transform =
+          "scaleX(" + self.progress + ")";
+        // document.querySelector(".progress-image").style.left =
+        //   self.progress * 100 + "%";
+      },
     },
     x: amplitudeX + "%",
     ease: "sine.inOut",
