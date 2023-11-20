@@ -1,7 +1,9 @@
 button {
-  width: 30px;
-  height: 30px;
-  background-color: aqua;
+  width: 63px;
+  height: 63px;
+  border-radius: 100%;
+  background-color: var(--burgundy);
+  border: none;
 }
 
 .button-section {
@@ -9,4 +11,18 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  color: var(--burgundy);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  border: solid 1px var(--burgundy);
 }
