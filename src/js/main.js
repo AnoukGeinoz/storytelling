@@ -105,49 +105,70 @@ slider3Button.addEventListener("click", function () {
   document.querySelector("footer").classList.remove("hidden");
 });
 
-// gsap.to(".l-img-1-1", {
+// gsap.to(".slider-mask", {
 //   scrollTrigger: {
-//     trigger: ".l-img-1-1",
-//     start: "top 50%",
+//     trigger: ".slider-mask",
+//     start: "top top",
+//     end: "+=300%",
+//     pin: true,
+//     scrub: true,
 //     markers: true,
 //   },
-//   x: "-30px",
-//   duration: 1,
-//   delay: 1,
+//   x: "-66.6666%",
+//   ease: "sine.inOut",
 // });
 
-// gsap.from(".l-img-1-1", {
-//   scrollTrigger: {
-//     trigger: ".l-img-1-1",
-//     start: "top 50%",
-//     // markers: true,
-//   },
-//   opacity: 0,
-//   duration: 1,
-//   delay: 1,
-// });
+gsap.to(".l-img-1-1", {
+  scrollTrigger: {
+    trigger: ".slider-mask",
+    start: "top top",
+    end: "+=200%",
+    // pin: true,
+    // scrub: true,
+    // markers: true,
+  },
+  x: "-30px",
+  duration: 1,
+  // delay: 1,
+});
 
-// gsap.to(".l-img-1-2", {
-//   scrollTrigger: {
-//     trigger: ".l-img-1-2",
-//     start: "top 50%",
-//     markers: true,
-//   },
-//   x: "-30px",
-//   duration: 1,
-//   delay: 2.5,
-// });
+gsap.from(".l-img-1-1", {
+  scrollTrigger: {
+    trigger: ".slider-mask",
+    start: "top top",
+    end: "+=200%",
+    // markers: true,
+  },
+  opacity: 0,
+  duration: 1,
+  // delay: 1,
+});
 
-// gsap.from(".l-img-1-2", {
-//   scrollTrigger: {
-//     trigger: ".l-img-1-2",
-//     start: "top 50%",
-//     // markers: true,
-//   },
-//   opacity: 0,
-//   duration: 1,
-//   delay: 2.5,
-// });
+gsap.to(".l-img-1-2", {
+  scrollTrigger: {
+    trigger: ".slider-mask",
+    start: "top top",
+    end: "+=250%",
+    // pin: true,
+    // scrub: true,
+    // markers: true,
+  },
+  x: "-30px",
+  duration: 1,
+  // delay: 1,
+});
+
+gsap.from(".l-img-1-2", {
+  scrollTrigger: {
+    trigger: ".slider-mask",
+    start: "top top",
+    end: "+=250%",
+    // markers: true,
+  },
+  opacity: 0,
+  duration: 1,
+  // delay: 1,
+});
 
 // gsap.to(".l-img-1-3", {
 //   scrollTrigger: {
