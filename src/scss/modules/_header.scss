@@ -1,0 +1,25 @@
+header {
+  background-image: url(../img/img-background-header.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--burgundy);
+}
+
+h1 {
+  font-size: 500px;
+  line-height: 80%;
+}
+
+.undertitle {
+  font-size: 125px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
