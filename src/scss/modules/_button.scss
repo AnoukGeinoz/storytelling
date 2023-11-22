@@ -1,4 +1,5 @@
-button {
+button,
+.slider-intro-button {
   width: 63px;
   height: 63px;
   border-radius: 100%;
@@ -13,11 +14,12 @@ button {
   align-items: center;
   position: absolute;
   bottom: 2%;
-  right: 50%;
+  right: 45%;
   color: var(--burgundy);
 }
 
-.button-container {
+.button-container,
+.button-container-intro {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,4 +27,15 @@ button {
   height: 76px;
   border-radius: 100%;
   border: solid 1px var(--burgundy);
+}
+
+.button-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 285%;
+  right: 45%;
+  color: var(--burgundy);
 }

@@ -6,11 +6,11 @@
 .l-section {
   // background-color: lightgrey;
   height: 100vh;
-  border: solid 1px black;
+  // border: solid 1px black;
 }
 
 .l-card {
-  background-color: honeydew;
+  // background-color: honeydew;
   width: 100%;
   height: 100vh;
   border: solid 1px black;
@@ -26,6 +26,18 @@
   display: inline-flex;
   // flex-direction: row;
   padding: 3px;
+}
+
+.l-section-horizontal {
+  background-image: url(../img/img-background-page-chap1.png);
+}
+
+.l-section-horizontal-2 {
+  background-image: url(../img/img-background-page-chap2.png);
+}
+
+.l-section-horizontal-3 {
+  background-image: url(../img/img-background-page-chap3.png);
 }
 
 .slider-mask,
@@ -106,4 +118,22 @@
   right: 6%;
   width: 7%;
   // height: 10%;
+}
+
+.l-img-intro-1 {
+  height: 100vh;
+}
+
+.l-img-intro-2 {
+  top: 210%;
+  left: 12%;
+  width: 37vw;
+  // height: 20%;
+}
+
+.l-img-intro-3 {
+  top: 215%;
+  right: 12%;
+  width: 43vw;
+  // height: 50%;
 }
