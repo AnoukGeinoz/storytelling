@@ -1,21 +1,9 @@
 const n = 3;
 var amplitudeX = (-100 * (n - 1)) / n;
 
-// gsap.to(".l-section-horizontal", {
-//   scrollTrigger: {
-//     trigger: ".slider-mask",
-//     start: "top top",
-//     end: "+=300%",
-//     pin: true,
-//     scrub: true,
-//     markers: true,
-//     repeat: 3,
-//   },
-//   x: amplitudeX + "%",
-//   ease: "sine.inOut",
-// });
-
 let tl = gsap.timeline({});
+
+const progressElement = document.querySelector(".progress-container");
 
 tl.to(".l-section-horizontal", {
   scrollTrigger: {
@@ -33,6 +21,17 @@ tl.to(".l-section-horizontal", {
         "scaleX(" + self.progress + ")";
       // document.querySelector(".progress-image").style.left =
       //   self.progress * 100 + "%";
+    },
+    onLeave: function () {
+      progressElement.classList.add("hidden");
+      slider1Button.classList.remove("hidden");
+    },
+    onEnterBack: function () {
+      progressElement.classList.remove("hidden");
+      slider1Button.classList.add("hidden");
+    },
+    onComplete: function () {
+      console.log("Scroll completed!");
     },
   },
   x: amplitudeX + "%",

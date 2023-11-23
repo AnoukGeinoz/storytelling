@@ -88,10 +88,10 @@ body {
 }
 
 .progress-container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   position: fixed;
   bottom: 4%;
