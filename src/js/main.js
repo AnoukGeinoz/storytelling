@@ -6,6 +6,9 @@ let tl = gsap.timeline({});
 const progressElement = document.querySelector(".progress-container");
 const progressElement2 = document.querySelector(".progress-container-2");
 const progressElement3 = document.querySelector(".progress-container-3");
+const buttonSection1 = document.querySelector("#button-section-1");
+const buttonSection2 = document.querySelector("#button-section-2");
+const buttonSection3 = document.querySelector("#button-section-3");
 
 var headerButton = document.querySelector("#slider-header-button");
 headerButton.addEventListener("click", function () {
@@ -29,11 +32,11 @@ headerButton.addEventListener("click", function () {
       },
       onLeave: function () {
         progressElement.classList.add("hidden");
-        slider1Button.classList.remove("hidden");
+        buttonSection1.classList.remove("hidden");
       },
       onEnterBack: function () {
         progressElement.classList.remove("hidden");
-        slider1Button.classList.add("hidden");
+        buttonSection1.classList.add("hidden");
       },
       onComplete: function () {
         console.log("Scroll completed!");
@@ -68,11 +71,11 @@ slider1Button.addEventListener("click", function () {
       },
       onLeave: function () {
         progressElement2.classList.add("hidden");
-        slider1Button.classList.remove("hidden");
+        buttonSection2.classList.remove("hidden");
       },
       onEnterBack: function () {
         progressElement2.classList.remove("hidden");
-        slider1Button.classList.add("hidden");
+        buttonSection2.classList.add("hidden");
       },
       onComplete: function () {
         console.log("Scroll completed!");
@@ -107,11 +110,11 @@ slider2Button.addEventListener("click", function () {
       },
       onLeave: function () {
         progressElement3.classList.add("hidden");
-        slider1Button.classList.remove("hidden");
+        buttonSection3.classList.remove("hidden");
       },
       onEnterBack: function () {
         progressElement3.classList.remove("hidden");
-        slider1Button.classList.add("hidden");
+        buttonSection3.classList.add("hidden");
       },
       onComplete: function () {
         console.log("Scroll completed!");
