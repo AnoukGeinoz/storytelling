@@ -21,14 +21,10 @@ headerButton.addEventListener("click", function () {
       pin: true,
       scrub: true,
       // markers: true,
-      onComplete: () => {
-        // blockScroll.classList.add("slider-mask-2-hidden");
-      },
+      onComplete: () => {},
       onUpdate: function (self) {
         document.querySelector(".progress-bar").style.transform =
           "scaleX(" + self.progress + ")";
-        // document.querySelector(".progress-image").style.left =
-        //   self.progress * 100 + "%";
       },
       onLeave: function () {
         progressElement.classList.add("hidden");
@@ -60,14 +56,10 @@ slider1Button.addEventListener("click", function () {
       scrub: true,
       // markers: true,
       repeat: 3,
-      onComplete: () => {
-        // blockScroll.classList.add("slider-mask-2-hidden");
-      },
+      onComplete: () => {},
       onUpdate: function (self) {
         document.querySelector(".progress-bar-2").style.transform =
           "scaleX(" + self.progress + ")";
-        // document.querySelector(".progress-image").style.left =
-        //   self.progress * 100 + "%";
       },
       onLeave: function () {
         progressElement2.classList.add("hidden");
@@ -99,14 +91,10 @@ slider2Button.addEventListener("click", function () {
       scrub: true,
       // markers: true,
       repeat: 3,
-      onComplete: () => {
-        // blockScroll.classList.add("slider-mask-2-hidden");
-      },
+      onComplete: () => {},
       onUpdate: function (self) {
         document.querySelector(".progress-bar-3").style.transform =
           "scaleX(" + self.progress + ")";
-        // document.querySelector(".progress-image").style.left =
-        //   self.progress * 100 + "%";
       },
       onLeave: function () {
         progressElement3.classList.add("hidden");
