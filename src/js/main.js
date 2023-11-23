@@ -7,43 +7,42 @@ const progressElement = document.querySelector(".progress-container");
 const progressElement2 = document.querySelector(".progress-container-2");
 const progressElement3 = document.querySelector(".progress-container-3");
 
-tl.to(".l-section-horizontal", {
-  scrollTrigger: {
-    trigger: ".slider-mask",
-    start: "top top",
-    end: "+=300%",
-    pin: true,
-    scrub: true,
-    // markers: true,
-    onComplete: () => {
-      // blockScroll.classList.add("slider-mask-2-hidden");
+var headerButton = document.querySelector("#slider-header-button");
+headerButton.addEventListener("click", function () {
+  document.querySelector("main").classList.remove("hidden");
+  tl.to(".l-section-horizontal", {
+    scrollTrigger: {
+      trigger: ".slider-mask",
+      start: "top top",
+      end: "+=300%",
+      pin: true,
+      scrub: true,
+      // markers: true,
+      onComplete: () => {
+        // blockScroll.classList.add("slider-mask-2-hidden");
+      },
+      onUpdate: function (self) {
+        document.querySelector(".progress-bar").style.transform =
+          "scaleX(" + self.progress + ")";
+        // document.querySelector(".progress-image").style.left =
+        //   self.progress * 100 + "%";
+      },
+      onLeave: function () {
+        progressElement.classList.add("hidden");
+        slider1Button.classList.remove("hidden");
+      },
+      onEnterBack: function () {
+        progressElement.classList.remove("hidden");
+        slider1Button.classList.add("hidden");
+      },
+      onComplete: function () {
+        console.log("Scroll completed!");
+      },
     },
-    onUpdate: function (self) {
-      document.querySelector(".progress-bar").style.transform =
-        "scaleX(" + self.progress + ")";
-      // document.querySelector(".progress-image").style.left =
-      //   self.progress * 100 + "%";
-    },
-    onLeave: function () {
-      progressElement.classList.add("hidden");
-      slider1Button.classList.remove("hidden");
-    },
-    onEnterBack: function () {
-      progressElement.classList.remove("hidden");
-      slider1Button.classList.add("hidden");
-    },
-    onComplete: function () {
-      console.log("Scroll completed!");
-    },
-  },
-  x: amplitudeX + "%",
-  ease: "sine.inOut",
+    x: amplitudeX + "%",
+    ease: "sine.inOut",
+  });
 });
-
-// var headerButton = document.querySelector("#slider-header-button");
-// headerButton.addEventListener("click", function () {
-//   document.querySelector(".intro-1").classList.remove("hidden");
-// });
 
 var slider1Button = document.querySelector("#slider-1-button");
 
