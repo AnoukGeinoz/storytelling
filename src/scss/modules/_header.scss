@@ -1,10 +1,11 @@
 header {
-  background-image: url(../img/img-background-header.png);
+  background-image: url(../img/img-background-header.png?as=webp);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--burgundy);
+  position: relative;
 }
 
 h1 {

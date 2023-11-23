@@ -15,6 +15,16 @@ var amplitudeX = (-100 * (n - 1)) / n;
 //   ease: "sine.inOut",
 // });
 
+// var slider1Button = document.querySelector("#slider-header-button");
+
+// slider1Button.addEventListener("click", function () {
+//   document.querySelector(".intro-1").classList.remove("hidden");
+//   gsap.to(".intro-1", {
+//     opacity: 0,
+//     duration: 1,
+//   });
+// });
+
 let tl = gsap.timeline({});
 
 tl.to(".l-section-horizontal", {

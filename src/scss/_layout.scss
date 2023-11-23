@@ -29,15 +29,15 @@
 }
 
 .l-section-horizontal {
-  background-image: url(../img/img-background-page-chap1.png);
+  background-image: url(../img/img-background-page-chap1.png?as=webp);
 }
 
 .l-section-horizontal-2 {
-  background-image: url(../img/img-background-page-chap2.png);
+  background-image: url(../img/img-background-page-chap2.png?as=webp);
 }
 
 .l-section-horizontal-3 {
-  background-image: url(../img/img-background-page-chap3.png);
+  background-image: url(../img/img-background-page-chap3.png?as=webp);
 }
 
 .slider-mask,
@@ -80,19 +80,19 @@
 .l-img-2-4 {
   top: 10%;
   left: 12%;
-  width: 43%;
+  width: 40%;
   // height: 43%;
 }
 
 .l-img-2-3 {
   bottom: 10%;
-  right: 12%;
-  width: 34%;
+  right: 13%;
+  width: 33%;
 }
 
 .l-img-2-5 {
-  bottom: 10%;
-  right: 12%;
+  bottom: 20%;
+  right: 13%;
   width: 37%;
   // height: 70%;
 }
