@@ -4,6 +4,8 @@ var amplitudeX = (-100 * (n - 1)) / n;
 let tl = gsap.timeline({});
 
 const progressElement = document.querySelector(".progress-container");
+const progressElement2 = document.querySelector(".progress-container-2");
+const progressElement3 = document.querySelector(".progress-container-3");
 
 tl.to(".l-section-horizontal", {
   scrollTrigger: {
@@ -60,6 +62,17 @@ slider1Button.addEventListener("click", function () {
         // document.querySelector(".progress-image").style.left =
         //   self.progress * 100 + "%";
       },
+      onLeave: function () {
+        progressElement2.classList.add("hidden");
+        slider1Button.classList.remove("hidden");
+      },
+      onEnterBack: function () {
+        progressElement2.classList.remove("hidden");
+        slider1Button.classList.add("hidden");
+      },
+      onComplete: function () {
+        console.log("Scroll completed!");
+      },
     },
     x: amplitudeX + "%",
     ease: "sine.inOut",
@@ -87,6 +100,17 @@ slider2Button.addEventListener("click", function () {
           "scaleX(" + self.progress + ")";
         // document.querySelector(".progress-image").style.left =
         //   self.progress * 100 + "%";
+      },
+      onLeave: function () {
+        progressElement3.classList.add("hidden");
+        slider1Button.classList.remove("hidden");
+      },
+      onEnterBack: function () {
+        progressElement3.classList.remove("hidden");
+        slider1Button.classList.add("hidden");
+      },
+      onComplete: function () {
+        console.log("Scroll completed!");
       },
     },
     x: amplitudeX + "%",

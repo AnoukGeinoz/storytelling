@@ -87,7 +87,9 @@ body {
   border-radius: 10px;
 }
 
-.progress-container {
+.progress-container,
+.progress-container-2,
+.progress-container-3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
