@@ -3,4 +3,54 @@ footer {
   position: relative;
   background-image: url(../img/img-footer-background.png);
   background-size: cover;
+  color: white;
+  font-family: "Cabinet Grotesk";
+  padding: 50px;
+  font-size: 20px;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 3px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.icons {
+  transition: transform 0.2s;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
