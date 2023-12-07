@@ -10,6 +10,20 @@ const buttonSection1 = document.querySelector("#button-section-1");
 const buttonSection2 = document.querySelector("#button-section-2");
 const buttonSection3 = document.querySelector("#button-section-3");
 
+var audio = document.querySelector("audio");
+
+var headerButton = document.querySelector("#slider-header-button");
+headerButton.addEventListener("click", function () {
+  document.querySelector(".l-img-music").classList.remove("hidden");
+});
+
+var headerButton = document.querySelector("#slider-header-button");
+headerButton.addEventListener("click", function () {
+  if (audio.paused) {
+    audio.play();
+  }
+});
+
 var headerButton = document.querySelector("#slider-header-button");
 headerButton.addEventListener("click", function () {
   document.querySelector("main").classList.remove("hidden");
@@ -123,7 +137,6 @@ slider3Button.addEventListener("click", function () {
   document.querySelector("footer").classList.remove("hidden");
 });
 
-var audio = document.querySelector("audio");
 document.querySelector(".l-img-music").addEventListener("click", function () {
   if (audio.paused) {
     audio.play();
