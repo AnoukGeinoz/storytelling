@@ -123,6 +123,15 @@ slider3Button.addEventListener("click", function () {
   document.querySelector("footer").classList.remove("hidden");
 });
 
+var audio = document.querySelector("audio");
+document.querySelector(".l-img-music").addEventListener("click", function () {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+
 // gsap.to(".l-img-1-3", {
 //   scrollTrigger: {
 //     trigger: ".l-img-1-3",

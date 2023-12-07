@@ -4,7 +4,8 @@
   "description": "Web projects starterkit for eikon studenrs",
   "scripts": {
     "clean:output": "rimraf dist",
-    "dev": "parcel src/index.html",
+    "clean:cache": "rimraf .parcel-cache",
+    "dev": "npm run clean:cache && parcel src/index.html",
     "build": "npm run clean:output && parcel build src/index.html --public-url '.' --no-cache"
   },
   "repository": {
